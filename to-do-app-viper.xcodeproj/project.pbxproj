@@ -1,0 +1,649 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		78A313AF28B8E8E1005BD126 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A313AE28B8E8E1005BD126 /* AppDelegate.swift */; };
+		78A313B128B8E8E1005BD126 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A313B028B8E8E1005BD126 /* SceneDelegate.swift */; };
+		78A313B628B8E8E1005BD126 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78A313B428B8E8E1005BD126 /* Main.storyboard */; };
+		78A313B828B8E8E6005BD126 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78A313B728B8E8E6005BD126 /* Assets.xcassets */; };
+		78A313BB28B8E8E6005BD126 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78A313B928B8E8E6005BD126 /* LaunchScreen.storyboard */; };
+		78A313C628B91F4C005BD126 /* CreateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A313C528B91F4C005BD126 /* CreateVC.swift */; };
+		78A313C828B91F67005BD126 /* UpdateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A313C728B91F67005BD126 /* UpdateVC.swift */; };
+		78A313DF28B921F1005BD126 /* HomepageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A313DD28B921F1005BD126 /* HomepageVC.swift */; };
+		78A313E028B921F1005BD126 /* HomepageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A313DE28B921F1005BD126 /* HomepageCell.swift */; };
+		78A313E728B9228D005BD126 /* updateInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A313E228B9228D005BD126 /* updateInteractor.swift */; };
+		78A313E828B9228D005BD126 /* UpdatePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A313E428B9228D005BD126 /* UpdatePresenter.swift */; };
+		78A313E928B9228D005BD126 /* UpdateProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A313E628B9228D005BD126 /* UpdateProtocols.swift */; };
+		78A313F028B92298005BD126 /* CreatePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A313EB28B92298005BD126 /* CreatePresenter.swift */; };
+		78A313F128B92298005BD126 /* CreateProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A313ED28B92298005BD126 /* CreateProtocols.swift */; };
+		78A313F228B92298005BD126 /* CreateInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A313EF28B92298005BD126 /* CreateInteractor.swift */; };
+		78A3140228B9233D005BD126 /* HomepageProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A313FD28B9233C005BD126 /* HomepageProtocols.swift */; };
+		78A3140328B9233D005BD126 /* HomepageInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A313FF28B9233C005BD126 /* HomepageInteractor.swift */; };
+		78A3140428B9233D005BD126 /* HomepagePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A3140128B9233C005BD126 /* HomepagePresenter.swift */; };
+		78A3140928B924B7005BD126 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A3140828B924B7005BD126 /* Note.swift */; };
+		78A3141628BF86A0005BD126 /* HomepageRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A3141528BF86A0005BD126 /* HomepageRouter.swift */; };
+		78A3141828BFB156005BD126 /* CreateRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A3141728BFB156005BD126 /* CreateRouter.swift */; };
+		78A3141A28BFB326005BD126 /* UpdateRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A3141928BFB326005BD126 /* UpdateRouter.swift */; };
+		78A3143028BFBED7005BD126 /* Todo-App.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 78A3142F28BFBED7005BD126 /* Todo-App.sqlite */; };
+		78A3143D28BFC18B005BD126 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 78A3143328BFC18B005BD126 /* FMDatabaseQueue.m */; };
+		78A3143E28BFC18B005BD126 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 78A3143628BFC18B005BD126 /* FMDatabaseAdditions.m */; };
+		78A3143F28BFC18B005BD126 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 78A3143728BFC18B005BD126 /* FMDatabase.m */; };
+		78A3144028BFC18B005BD126 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 78A3143B28BFC18B005BD126 /* FMDatabasePool.m */; };
+		78A3144128BFC18B005BD126 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 78A3143C28BFC18B005BD126 /* FMResultSet.m */; };
+		78A3144528BFD02A005BD126 /* SqliteDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A3144428BFD02A005BD126 /* SqliteDatabase.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		78A313AB28B8E8E1005BD126 /* to-do-app-viper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "to-do-app-viper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		78A313AE28B8E8E1005BD126 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		78A313B028B8E8E1005BD126 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		78A313B528B8E8E1005BD126 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		78A313B728B8E8E6005BD126 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		78A313BA28B8E8E6005BD126 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		78A313BC28B8E8E6005BD126 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78A313C528B91F4C005BD126 /* CreateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateVC.swift; sourceTree = "<group>"; };
+		78A313C728B91F67005BD126 /* UpdateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateVC.swift; sourceTree = "<group>"; };
+		78A313DD28B921F1005BD126 /* HomepageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomepageVC.swift; sourceTree = "<group>"; };
+		78A313DE28B921F1005BD126 /* HomepageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomepageCell.swift; sourceTree = "<group>"; };
+		78A313E228B9228D005BD126 /* updateInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = updateInteractor.swift; sourceTree = "<group>"; };
+		78A313E428B9228D005BD126 /* UpdatePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdatePresenter.swift; sourceTree = "<group>"; };
+		78A313E628B9228D005BD126 /* UpdateProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateProtocols.swift; sourceTree = "<group>"; };
+		78A313EB28B92298005BD126 /* CreatePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatePresenter.swift; sourceTree = "<group>"; };
+		78A313ED28B92298005BD126 /* CreateProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateProtocols.swift; sourceTree = "<group>"; };
+		78A313EF28B92298005BD126 /* CreateInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateInteractor.swift; sourceTree = "<group>"; };
+		78A313FD28B9233C005BD126 /* HomepageProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomepageProtocols.swift; sourceTree = "<group>"; };
+		78A313FF28B9233C005BD126 /* HomepageInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomepageInteractor.swift; sourceTree = "<group>"; };
+		78A3140128B9233C005BD126 /* HomepagePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomepagePresenter.swift; sourceTree = "<group>"; };
+		78A3140828B924B7005BD126 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		78A3141528BF86A0005BD126 /* HomepageRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageRouter.swift; sourceTree = "<group>"; };
+		78A3141728BFB156005BD126 /* CreateRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRouter.swift; sourceTree = "<group>"; };
+		78A3141928BFB326005BD126 /* UpdateRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateRouter.swift; sourceTree = "<group>"; };
+		78A3141D28BFBEB0005BD126 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		78A3142F28BFBED7005BD126 /* Todo-App.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Todo-App.sqlite"; sourceTree = "<group>"; };
+		78A3143228BFC18B005BD126 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		78A3143328BFC18B005BD126 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		78A3143428BFC18B005BD126 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		78A3143528BFC18B005BD126 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		78A3143628BFC18B005BD126 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		78A3143728BFC18B005BD126 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		78A3143828BFC18B005BD126 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		78A3143928BFC18B005BD126 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		78A3143A28BFC18B005BD126 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		78A3143B28BFC18B005BD126 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		78A3143C28BFC18B005BD126 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		78A3144228BFC2CF005BD126 /* to-do-app-viper-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "to-do-app-viper-Bridging-Header.h"; sourceTree = "<group>"; };
+		78A3144428BFD02A005BD126 /* SqliteDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SqliteDatabase.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		78A313A828B8E8E1005BD126 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		78A313A228B8E8E1005BD126 = {
+			isa = PBXGroup;
+			children = (
+				78A313AD28B8E8E1005BD126 /* to-do-app-viper */,
+				78A313AC28B8E8E1005BD126 /* Products */,
+				78A3141C28BFBEB0005BD126 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		78A313AC28B8E8E1005BD126 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				78A313AB28B8E8E1005BD126 /* to-do-app-viper.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		78A313AD28B8E8E1005BD126 /* to-do-app-viper */ = {
+			isa = PBXGroup;
+			children = (
+				78A313AE28B8E8E1005BD126 /* AppDelegate.swift */,
+				78A313B028B8E8E1005BD126 /* SceneDelegate.swift */,
+				78A3144328BFD004005BD126 /* database */,
+				78A3140728B924A8005BD126 /* entity */,
+				78A313C428B8E980005BD126 /* update-module */,
+				78A313C328B8E972005BD126 /* create-module */,
+				78A313C228B8E93C005BD126 /* homepage-module */,
+				78A313B428B8E8E1005BD126 /* Main.storyboard */,
+				78A313B728B8E8E6005BD126 /* Assets.xcassets */,
+				78A313B928B8E8E6005BD126 /* LaunchScreen.storyboard */,
+				78A313BC28B8E8E6005BD126 /* Info.plist */,
+				78A3142F28BFBED7005BD126 /* Todo-App.sqlite */,
+				78A3143128BFC18B005BD126 /* FMDB */,
+			);
+			path = "to-do-app-viper";
+			sourceTree = "<group>";
+		};
+		78A313C228B8E93C005BD126 /* homepage-module */ = {
+			isa = PBXGroup;
+			children = (
+				78A313FC28B9233C005BD126 /* protocols */,
+				78A313DC28B921F1005BD126 /* view */,
+				78A313FE28B9233C005BD126 /* interactor */,
+				78A3140028B9233C005BD126 /* presenter */,
+				78A3141428BF868C005BD126 /* router */,
+			);
+			path = "homepage-module";
+			sourceTree = "<group>";
+		};
+		78A313C328B8E972005BD126 /* create-module */ = {
+			isa = PBXGroup;
+			children = (
+				78A313EC28B92298005BD126 /* protocols */,
+				78A3140628B92371005BD126 /* view */,
+				78A313EE28B92298005BD126 /* interactor */,
+				78A313EA28B92298005BD126 /* presenter */,
+				78A3144628BFD1B4005BD126 /* router */,
+			);
+			path = "create-module";
+			sourceTree = "<group>";
+		};
+		78A313C428B8E980005BD126 /* update-module */ = {
+			isa = PBXGroup;
+			children = (
+				78A3141B28BFB446005BD126 /* router */,
+				78A313E528B9228D005BD126 /* protocols */,
+				78A3140528B9236A005BD126 /* view */,
+				78A313E128B9228D005BD126 /* interactor */,
+				78A313E328B9228D005BD126 /* presenter */,
+			);
+			path = "update-module";
+			sourceTree = "<group>";
+		};
+		78A313DC28B921F1005BD126 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				78A313DD28B921F1005BD126 /* HomepageVC.swift */,
+				78A313DE28B921F1005BD126 /* HomepageCell.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		78A313E128B9228D005BD126 /* interactor */ = {
+			isa = PBXGroup;
+			children = (
+				78A313E228B9228D005BD126 /* updateInteractor.swift */,
+			);
+			path = interactor;
+			sourceTree = "<group>";
+		};
+		78A313E328B9228D005BD126 /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+				78A313E428B9228D005BD126 /* UpdatePresenter.swift */,
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
+		78A313E528B9228D005BD126 /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				78A313E628B9228D005BD126 /* UpdateProtocols.swift */,
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
+		78A313EA28B92298005BD126 /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+				78A313EB28B92298005BD126 /* CreatePresenter.swift */,
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
+		78A313EC28B92298005BD126 /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				78A313ED28B92298005BD126 /* CreateProtocols.swift */,
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
+		78A313EE28B92298005BD126 /* interactor */ = {
+			isa = PBXGroup;
+			children = (
+				78A313EF28B92298005BD126 /* CreateInteractor.swift */,
+			);
+			path = interactor;
+			sourceTree = "<group>";
+		};
+		78A313FC28B9233C005BD126 /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				78A313FD28B9233C005BD126 /* HomepageProtocols.swift */,
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
+		78A313FE28B9233C005BD126 /* interactor */ = {
+			isa = PBXGroup;
+			children = (
+				78A313FF28B9233C005BD126 /* HomepageInteractor.swift */,
+			);
+			path = interactor;
+			sourceTree = "<group>";
+		};
+		78A3140028B9233C005BD126 /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+				78A3140128B9233C005BD126 /* HomepagePresenter.swift */,
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
+		78A3140528B9236A005BD126 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				78A313C728B91F67005BD126 /* UpdateVC.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		78A3140628B92371005BD126 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				78A313C528B91F4C005BD126 /* CreateVC.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		78A3140728B924A8005BD126 /* entity */ = {
+			isa = PBXGroup;
+			children = (
+				78A3140828B924B7005BD126 /* Note.swift */,
+			);
+			path = entity;
+			sourceTree = "<group>";
+		};
+		78A3141428BF868C005BD126 /* router */ = {
+			isa = PBXGroup;
+			children = (
+				78A3141528BF86A0005BD126 /* HomepageRouter.swift */,
+			);
+			path = router;
+			sourceTree = "<group>";
+		};
+		78A3141B28BFB446005BD126 /* router */ = {
+			isa = PBXGroup;
+			children = (
+				78A3141928BFB326005BD126 /* UpdateRouter.swift */,
+			);
+			path = router;
+			sourceTree = "<group>";
+		};
+		78A3141C28BFBEB0005BD126 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				78A3141D28BFBEB0005BD126 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		78A3143128BFC18B005BD126 /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				78A3143228BFC18B005BD126 /* FMDatabase.h */,
+				78A3143328BFC18B005BD126 /* FMDatabaseQueue.m */,
+				78A3143428BFC18B005BD126 /* FMResultSet.h */,
+				78A3143528BFC18B005BD126 /* FMDatabasePool.h */,
+				78A3143628BFC18B005BD126 /* FMDatabaseAdditions.m */,
+				78A3143728BFC18B005BD126 /* FMDatabase.m */,
+				78A3143828BFC18B005BD126 /* FMDatabaseQueue.h */,
+				78A3143928BFC18B005BD126 /* FMDB.h */,
+				78A3143A28BFC18B005BD126 /* FMDatabaseAdditions.h */,
+				78A3143B28BFC18B005BD126 /* FMDatabasePool.m */,
+				78A3143C28BFC18B005BD126 /* FMResultSet.m */,
+				78A3144228BFC2CF005BD126 /* to-do-app-viper-Bridging-Header.h */,
+			);
+			path = FMDB;
+			sourceTree = "<group>";
+		};
+		78A3144328BFD004005BD126 /* database */ = {
+			isa = PBXGroup;
+			children = (
+				78A3144428BFD02A005BD126 /* SqliteDatabase.swift */,
+			);
+			path = database;
+			sourceTree = "<group>";
+		};
+		78A3144628BFD1B4005BD126 /* router */ = {
+			isa = PBXGroup;
+			children = (
+				78A3141728BFB156005BD126 /* CreateRouter.swift */,
+			);
+			path = router;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		78A313AA28B8E8E1005BD126 /* to-do-app-viper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78A313BF28B8E8E6005BD126 /* Build configuration list for PBXNativeTarget "to-do-app-viper" */;
+			buildPhases = (
+				78A313A728B8E8E1005BD126 /* Sources */,
+				78A313A828B8E8E1005BD126 /* Frameworks */,
+				78A313A928B8E8E1005BD126 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "to-do-app-viper";
+			productName = "to-do-app-viper";
+			productReference = 78A313AB28B8E8E1005BD126 /* to-do-app-viper.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		78A313A328B8E8E1005BD126 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					78A313AA28B8E8E1005BD126 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 78A313A628B8E8E1005BD126 /* Build configuration list for PBXProject "to-do-app-viper" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 78A313A228B8E8E1005BD126;
+			productRefGroup = 78A313AC28B8E8E1005BD126 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				78A313AA28B8E8E1005BD126 /* to-do-app-viper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		78A313A928B8E8E1005BD126 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78A313BB28B8E8E6005BD126 /* LaunchScreen.storyboard in Resources */,
+				78A313B828B8E8E6005BD126 /* Assets.xcassets in Resources */,
+				78A313B628B8E8E1005BD126 /* Main.storyboard in Resources */,
+				78A3143028BFBED7005BD126 /* Todo-App.sqlite in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		78A313A728B8E8E1005BD126 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78A313E828B9228D005BD126 /* UpdatePresenter.swift in Sources */,
+				78A313F028B92298005BD126 /* CreatePresenter.swift in Sources */,
+				78A313AF28B8E8E1005BD126 /* AppDelegate.swift in Sources */,
+				78A3144028BFC18B005BD126 /* FMDatabasePool.m in Sources */,
+				78A313F128B92298005BD126 /* CreateProtocols.swift in Sources */,
+				78A313C628B91F4C005BD126 /* CreateVC.swift in Sources */,
+				78A3144128BFC18B005BD126 /* FMResultSet.m in Sources */,
+				78A3144528BFD02A005BD126 /* SqliteDatabase.swift in Sources */,
+				78A3143E28BFC18B005BD126 /* FMDatabaseAdditions.m in Sources */,
+				78A3143D28BFC18B005BD126 /* FMDatabaseQueue.m in Sources */,
+				78A313B128B8E8E1005BD126 /* SceneDelegate.swift in Sources */,
+				78A313E928B9228D005BD126 /* UpdateProtocols.swift in Sources */,
+				78A3143F28BFC18B005BD126 /* FMDatabase.m in Sources */,
+				78A3141A28BFB326005BD126 /* UpdateRouter.swift in Sources */,
+				78A313F228B92298005BD126 /* CreateInteractor.swift in Sources */,
+				78A3141828BFB156005BD126 /* CreateRouter.swift in Sources */,
+				78A3140928B924B7005BD126 /* Note.swift in Sources */,
+				78A313DF28B921F1005BD126 /* HomepageVC.swift in Sources */,
+				78A3140428B9233D005BD126 /* HomepagePresenter.swift in Sources */,
+				78A3140228B9233D005BD126 /* HomepageProtocols.swift in Sources */,
+				78A313E028B921F1005BD126 /* HomepageCell.swift in Sources */,
+				78A313E728B9228D005BD126 /* updateInteractor.swift in Sources */,
+				78A3140328B9233D005BD126 /* HomepageInteractor.swift in Sources */,
+				78A3141628BF86A0005BD126 /* HomepageRouter.swift in Sources */,
+				78A313C828B91F67005BD126 /* UpdateVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		78A313B428B8E8E1005BD126 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				78A313B528B8E8E1005BD126 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		78A313B928B8E8E6005BD126 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				78A313BA28B8E8E6005BD126 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		78A313BD28B8E8E6005BD126 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		78A313BE28B8E8E6005BD126 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		78A313C028B8E8E6005BD126 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q5TKUQ5ZUC;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "to-do-app-viper/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tolgakaanaysu.to-do-app-viper";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "to-do-app-viper/FMDB/to-do-app-viper-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		78A313C128B8E8E6005BD126 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q5TKUQ5ZUC;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "to-do-app-viper/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tolgakaanaysu.to-do-app-viper";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "to-do-app-viper/FMDB/to-do-app-viper-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		78A313A628B8E8E1005BD126 /* Build configuration list for PBXProject "to-do-app-viper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78A313BD28B8E8E6005BD126 /* Debug */,
+				78A313BE28B8E8E6005BD126 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78A313BF28B8E8E6005BD126 /* Build configuration list for PBXNativeTarget "to-do-app-viper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78A313C028B8E8E6005BD126 /* Debug */,
+				78A313C128B8E8E6005BD126 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 78A313A328B8E8E1005BD126 /* Project object */;
+}
