@@ -29,6 +29,7 @@ class HomepageVC: UIViewController {
         searchBarConfig()
         HomepageRouter.createModule(ref: self)
         
+        hideKeyboardWhenTappedAround()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -67,6 +68,7 @@ extension HomepageVC: UITableViewDelegate, UITableViewDataSource {
         performSegue(withIdentifier: "toUpdateVC", sender: note)
     }
     
+    //Swipe
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         let note = notesList[indexPath.row]
         let delete = UIContextualAction(style: .destructive,
